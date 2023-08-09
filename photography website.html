@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=" css file/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .n1{
+      float: right
+    }
+    .bd-example{
+      position: relative;
+      width: 100%;
+      
+      
+    }
+    .h11{
+      position:absolute;
+      top:0;
+      width:100%;
+    }
+    .bgk{
+      background-color: rgb(208, 218, 214);
+      padding-left: 75px;
+      padding-top: 100px;
+      padding-right: 100px;
+      padding-bottom: 40px;
+    
+    }
+    .a1{
+      width: 259px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          background-color: #fff;
+    
+    }
+    .line{position: absolute;
+      width: 371px;
+      border-top: 3px solid #000;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 59px;
+    }
+    .c1{
+      text-align: center;
+      padding-top: 80px;
+      font-display: block;
+      font-size: larger;
+      
+    }
+    .card.a30{
+      background-color: black;
+      color: aliceblue;
+      
+    }
+    .card.a40{
+      background-color: rgb(24, 49, 49);
+      color: aliceblue;
+    }
+    
+    
+    .card.a2{
+      background-color: rgb(58, 51, 41);
+    color: aliceblue;
+    padding: 0px;
+  }
+  .form{
+    padding-top: 98px;
+    padding-left: 70px;
+    padding-right: 50px;
+    background-color: white
+  }
+  .b1{
+    padding-top: 80px;
+    
+    padding-bottom: 50px;
+  }
+  
+  .f1{
+    background-color: white
+    padding-left: 100px;
+  }
+  .footer.kp {
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 40px;
+    margin-bottom: 2px solid black;
+    
+  }
+  .kp a{
+    color: #f8f8f7;
+  }
+  
+  .p12{
+    top:20px;
+    position:absolute;
+    right: 30px;
+    
+  }
+    .navbar{
+      
+      position: fixed;
+      height: 130px;
+      width: 100%;
+    }
+    .scrolled5{
+      background-color:black;
+    }
+    
+
+  </style>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script >
+   window.onscroll = function() {
+     myFunction()
+    };
+
+   function myFunction() {
+     var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+     var elem = document.getElementById("main");
+     
+     if ( scrollTop>580) {
+       //elem.className = "scrolled5";
+       elem.classList.add("scrolled5")
+     }
+     else if(scrollTop>0 && scrollTop<580)
+    {
+      elem.classList.remove("scrolled5")
+    }
+ 
+    }
+     </script>
+
+   </head>
+  <body>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="main">
+        <a class="navbar-brand" href="#">
+          <h1 style="color:#f8f8f7;"><strong>PhotoM4</strong></h1>
+          
+        </a>
+        <div class="p12"> 
+          <a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i> </a> &nbsp &nbsp <a href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a> &nbsp &nbsp <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> </a> &nbsp &nbsp <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> </a> &nbsp;
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+<div style="clear: both;"></div>
+          <ul class="navbar-nav ml-auto my-2">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Demo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Demo live
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-light" href="#">Action</a>
+                <a class="dropdown-item text-light" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-light" href="#">Disabled</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+
+       
+  <div class="bd-example">
+    <div class="container-fluid col-sm-12 col-lg-12 md-lg-2 p-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+       
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="image/back.jpg"  height="650px" alt="First slide [900x300]">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style="font-weight:800px ; color:rgb(247, 241, 241)">F R I N D L Y</h3>
+            <h1 style="font-weight: 700px; color:rgb(204, 189, 189)">Photo WORKSHOP</h1>
+            <p style="color: hsl(0, 4%, 73%);"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique voluptatum assumenda officiis ad aspernatur eaque. Ratione at qui nulla quas expedita minus incidunt obcaecati ipsa veritatis, perferendis nihil amet nisi itaque id praesentium tempora cum facilis consequuntur minima repellendus.</p>
+            <button type="button" class="btn btn-outline-dark"><h5 style="color: rgb(207, 193, 193);"> VIEW MORE</h5></button>
+          </div>
+        </div>
+
+
+          
+        <div class="carousel-item ">
+          <img class="d-block w-100" src="image/w9.jpg" height="650px" alt="third slide [900x300]">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style="font-weight:800px ; color:rgb(211, 198, 198)">F R I N D L Y</h3>
+            <h1 style="font-weight: 700px; color:rgb(211, 198, 198)">Photo WORKSHOP</h1>
+            <p style="color:rgb(211, 198, 198)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique voluptatum assumenda officiis ad aspernatur eaque. Ratione at qui nulla quas expedita minus incidunt obcaecati ipsa veritatis, perferendis nihil amet nisi itaque id praesentium tempora cum facilis consequuntur minima repellendus.</p>
+            <button type="button" class="btn btn-outline-dark"><h5>VIEW MORE</h5></button>
+          </div>
+        </div>
+
+
+        <div class="carousel-item ">
+          <img class="d-block w-100" src="image/w15.jpg" height="650px" alt="fourth slide slide [900x300]" >
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style="font-weight:800px ;">F R I N D L Y</h3>
+            <h1 style="font-weight: 700px;">Photo WORKSHOP</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique voluptatum assumenda officiis ad aspernatur eaque. Ratione at qui nulla quas expedita minus incidunt obcaecati ipsa veritatis, perferendis nihil amet nisi itaque id praesentium tempora cum facilis consequuntur minima repellendus.</p>
+            <button type="button" class="btn btn-outline-dark"><h5 style="color: aliceblue;">VIEW MORE</h5></button>
+          </div>
+        </div>
+
+        
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="image/w8.jpg" height="650px" alt="Second slide [900x300]" >
+          <div class="carousel-caption justify-content-right d-none  d-md-block">
+            <h3>F R I N D L Y</h3>
+            <h1>Photo WORKSHOP</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe praesentium molestias sint at corporis similique laudantium recusandae cupiditate, voluptatibus nam eligendi obcaecati ipsa dolore facilis sunt illum esse dicta et id. Vel maiores odio quia doloremque odit perferendis molestiae dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, modi?</p>
+            <button type="button" class="btn btn-outline-dark  "><h5 style="color:rgb(228, 201, 201)">VIEW MORE</h5></button>
+                
+
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+     
+    </div>
+    </div>
+  </div>
+  
+
+        <div class="header h11 d-none">
+           
+         <div class="row">
+
+          <div class="col-6">
+           <h1 style="color:#f8f8f7;"><strong>PhotoM4</strong></h1>
+    </div>
+          
+
+
+           <div class="col-6 mt-3">
+               <p style="float: right;"> 
+                 <a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i> </a> &nbsp &nbsp <a href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a> &nbsp &nbsp <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> </a> &nbsp &nbsp <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> </a> &nbsp;
+              </p>
+            <br>
+
+<!-- Image and text -->
+<div class="n1">
+  <nav class="navbar navbar-expand-lg navbar-light  sticky-top  ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">live Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Live demo blocks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-light" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<nav class="navbar navbar-light  d-none">
+  
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link " href="#!">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Live Demo</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#!">Live Demo</a>
+        <a class="dropdown-item" href="#!">Live Demo Blocks</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#" role="button" aria-haspopup="true" aria-expaned="false">Live Demo BlockS</a>
+       <Div class="dropdown-menu" >
+         <a class="dropdown-item" href="#">L1</a>
+         <a class="dropdown-item" href="#">L2</a>
+
+         </Div>
+          
+
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#!">Buy Now</a>
+    </li>
+     
+  </ul>  
+
+</nav>
+    </div>
+    </div>
+           
+  
+  </div>
+</div>
+
+  </div>
+  
+
+  </div>
+  
+  <div class="container-fluid">
+    <h1 style="text-align: center;padding-top:60px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding-bottom:10px"> Create &nbsp &nbsp Your &nbsp &nbsp Masterpiece</h1>
+    <h4 style="text-align: center; color:red;padding-bottom:50px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">C &nbspR &nbsp E&nbspA &nbspT &nbspI  &nbspV &nbspE &nbsp &nbsp &nbsp C&nbspO&nbspL&nbspL&nbspE&nbspC&nbspT&nbspI&nbspO&nbspN</h4>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col p-6 bg-basic text-white "><img class="d-block w-100" src="image/creative.jpg" width="100%"  alt="Second slide">
+      
+      </div>
+      
+      <div class="col p-6 bg-basic text-white"><img class="d-block w-100" src="image/creative2.jpg" width="100%" alt="Second slide"></div>
+  </div>
+</div>
+  
+<div class="container-fluid p-0 ss">
+  <div class="row">
+      <div class="col-lg-6 col-sm-12 p-0 mt-5"><img class ="d-block w-100" width="100%" height="100%" src = "image/free.jpg"></div>
+      <div class="col-lg-6 col-sm-12 p-0 mt-5 bg-white text-black">
+        <div class="bgk">
+          <h1 style="padding-bottom:30px;">FREE MASTERCLASSES</h1>
+          <h4 style="padding-bottom: 30px;"> creative photography </h4>
+          <p style="padding-bottom: 50px;">
+              lprem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget lectus eu ex ornare porta euismod a libero.
+               Phasellus vechicula placerat enim at egestas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur nisi eius consequuntur facilis autem cumque sequi modi saepe harum et ex maxime, laudantium veniam!
+          </p>
+
+
+          <button type="button" class="btn btn-outline-dark">VIEW MORE</button>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+<div class="container-fluid text-center mt-1 p-0" style="position:relative;min-height:180px;">
+  <div class="line">
+  </div>
+ <div class="a1"> <h3 style="text-align: center; padding: 55px; "><b>S&nbspH&nbspO&nbspP</b></h3></div>
+ <div style="clear:both;"></div>
+  <h1 style="position:relative;top:127px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Our Works</h1>
+ 
+</div>
+<div class ="container-fluid mt-6 p-0">
+  <div class="a3">
+  <div class="row">
+    <div class="col-6 mt-2 sm-12 lg-6">
+      <p><h4 style="padding-top:55px;padding-left:45px;">All /  AWSOME  /  WONDERFULL  /  CREATIVE  /  RESPONSIVE
+
+      </div>
+      <div class="col-6 mt-4  lg-6 sm-12">
+        <h4 style="text-align:right;padding-top:55px;padding-right: 100px"><i class="fas fa-sort"></i>DEFAULT SORTING</h4>
+      </div>
+  </div>
+  </div>
+  </div>
+    
+
+  <div class="container-fluid mt-3 p-5 col-sm-12 lg-6">
+    <div class="b22">
+    <div class="row">
+      <div class="col lg-3 p-3">
+    <div class="card" style="width: 20rem;">
+      <img src="image/focus1.jpg" width="10px" height="180px" class="card-img-top" alt="lens">
+      <div class="card-body">
+        <p class="card-text">FOCUS RING<BR><i class="fas fa-dollar-sign"></i>75</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    </div>
+    <div class="col lg-3 p-3">
+      <div class="card hghhh" style="width:20rem;">
+        <img src="image/photo lense.jpg" width="10px" height="180px" class="card-img-top" alt="lens">
+        <div class="card-body">
+          <p class="card-text">PHOTO LENS<BR><i class="fas fa-dollar-sign"></i>49</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      </div>
+      <div class="col lg-3 p-3">
+        <div class="card" style="width: 20rem ;">
+          <img src="image/new camera1.jpg" style="height: 180px" width="10px" class="card-img-top" alt="lens">
+          <div class="card-body">
+            <p class="card-text">NEW CAMERA<BR><i class="fas fa-dollar-sign"></i>299</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        </div>
+        <div class="col p-3 lg-3">
+          <div class="card" style="width:20rem ;">
+            <img src="image/zent.jpg" height="180px" width="10px" class="card-img-top" alt="lens">
+            <div class="card-body">
+              <p class="card-text">ZENIT<BR><i class="fas fa-dollar-sign"></i>55</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="conatiner-fluid mt-3 pl-5 pr-5 pb-5  col-sm-12 lg-6">
+      <div class ="b11">
+        <div class="row">
+          <div class="col p-3 lg-3">
+        <div class="card" style="width: 20rem">
+          <img src="image/lens3.jpg" width="10px" height="180px" class="card-img-top" alt="lens">
+          <div class="card-body">
+            <p class="card-text">LENS<BR><i class="fas fa-dollar-sign"></i>75</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        </div>
+        <div class="col lg-3 p-3">
+          <div class="card" style="width: 20rem;">
+            <img src="image/ss1.jpg" width="10px" height="180px" class="card-img-top" height="100%"  alt="lens">
+            <div class="card-body">
+              <p class="card-text">SONI CAMERA<BR><i class="fas fa-dollar-sign"></i>249</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          </div>
+          <div class="col lg-3 p-3">
+            <div class="card" style="width: 20rem;">
+              <img src="image/creative.jpg" width="10px" height="180px" class="card-img-top" width="100%" height="100% alt="lens">
+              <div class="card-body">
+                <p class="card-text">CANON CAMERA<BR><i class="fas fa-dollar-sign"></i>299</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            </div>
+            <div class="col lg-3 p-3">
+              <div class="card" style="width: 20rem;">
+                <img src="image/vint.jpg" class="card-img-top" width="10px" height="180px" alt="lens">
+                <div class="card-body">
+                  <p class="card-text">VINTAGE CAMERA<BR><i class="fas fa-dollar-sign"></i>100</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              
+              
+             </div>    
+      </div>
+      </div>
+      </div>
+         
+      
+      <div class="container-fluid bg-secondary p-6 mt-6 sm-12">
+        <div class="container p-3 sm-12">
+
+     <div class="row">
+       <div class="p-3  col-12 col-md-8 col-lg-4">
+         
+         
+         
+           <img class="d-block w-100" src="image/show.jpg"  width="100%" height="100%" alt="Second slide">
+           <div class="carousel-caption d-none d-md-block">
+             
+             <header><i class="fas fa-eye"></i></header>
+             <h3>showcases</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           
+           
+           </div>
+         </div>
+         <div class="p-3  col-12 col-md-8 col-lg-4">
+           <img class="d-block w-100" src="image/v.jpg" alt="Second slide">
+           <div class="carousel-caption d-none d-md-block">
+           
+             <header><i class="fas fa-video"></i></header>
+             <h3>coverage</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           
+           </div>
+       </div>
+       <div class="p-3  col-12 col-md-8 col-lg-4">
+         <img class="d-block w-100" src="image/cov.jpg" width="100%" height="100%" alt="Second slide">
+         <div class="carousel-caption d-none d-md-block">
+           
+           <header><i class="fas fa-camera-retro"></i></header>
+           <h3>photograpgy</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         
+         </div>
+       
+       </div>
+       
+     </div>
+     </div>
+
+      </div>
+
+      <div class="continer- fluid">
+        <div class="c1">
+        <h1 style="padding-bottom: 18px; font-family: sans-serif;font-size: 2.8rem;">ALREADY SIGNED TO US</h1>
+        <H5 style="padding-bottom: 28px;font-family:sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eligendi.</H5></div>
+        <div class="container sm-12 lg-6">
+          <table class="table tbb">
+            <thead class="thead-dark">
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>user name </th>
+                <th> date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-secondary">
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@markotto</td>
+                <td>11.2.2021</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@jacoocoo</td>
+                <td>14.10.21</td>
+              </tr>
+              
+                <tr class="table-secondary">
+                  <th scope="row">3</th>
+                  <td>adam</td>
+                    <td>paul</td>
+                    <td>@paul</td>
+                    <td>22.6.21</td>
+                  
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>jessy</td>
+                <td>jenna</td>
+                <td>@jessy</td>
+                <td>21.8.21</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">5</th>
+                <td>mary</td>
+                <td>lica</td>
+                <td>@merylica</td>
+                <td>4.5.21</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          
+
+        </div>
+
+      </div>
+
+      <div class="container-fluid p-0 mt-3">
+        <div class="col-md-12 col-lg-12 p-0 ">
+        <div class="conatiner-fluid bg-secondary sm-12 pl-4 mt-5 pr-4">
+          
+          <h1 style="padding-top: 100px;padding-bottom:40px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> Services List</h1>
+          <h3 style="padding-bottom:20px;">Showcases</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut odio voluptas consequatur quas ab explicabo dolorum dolorem dolores? Cum qui a earum quo! Similique explicabo nihil id. Illum, non! Asperiores officiis quo voluptate dolore ullam, iste atque! Ab dicta voluptatum, earum recusandae minima, dolorum natus repellendus ipsa veritatis vero quis quos! Excepturi nihil laudantium quas quam accusantium earum ex expedita illo quos sed enim deleniti voluptatem explicabo perferendis similique perspiciatis quod cumque, eos cupiditate esse tempora. Accusamus voluptate quas soluta numquam eos nostrum, odio dicta consequuntur? Tempora deserunt doloribus at culpa, necessitatibus rerum possimus iusto harum dolorem, distinctio quisquam voluptates.</p>
+          <h3 style="padding-top: 20px;padding-bottom:20px">Coverage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos repellat temporibus modi optio magni eveniet harum, expedita, omnis exercitationem repellendus vitae ea suscipit non nihil ipsum dolore ipsa nemo aliquid cumque aspernatur facere veritatis. Libero animi dolor eaque maxime? Dolorum ad harum dolore eos, aut voluptates. Tempora assumenda libero provident error iste minima explicabo deleniti perspiciatis unde molestias sapiente, dolorum a est! Modi doloremque odit amet possimus distinctio earum itaque adipisci a nesciunt, dolorem quam atque recusandae? Consectetur, corporis! Maxime totam similique facere autem quam culpa aliquam provident veritatis omnis, illo aliquid, perferendis minus sit iusto dicta, neque eum.</p>
+          <h3 style="padding-top: 20px; padding-bottom:20px">Photography</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis laborum eaque aliquam iste libero, ab nulla necessitatibus quasi magni eligendi eos dolores. Voluptatem, esse voluptatum repudiandae excepturi, quos iste fugit suscipit consequuntur, deleniti ab odio! Ducimus illum inventore voluptate dignissimos non minima libero enim debitis odio ullam nemo repellendus cumque explicabo cupiditate, quo numquam necessitatibus suscipit aspernatur animi nobis totam repudiandae! Laboriosam, hic perspiciatis consequuntur veniam nemo sunt molestiae perferendis a porro dolore minima pariatur id et commodi. Laborum, doloribus? Molestiae laboriosam minima, voluptates, totam maxime perspiciatis consequuntur doloremque aperiam, itaque voluptas neque soluta? Optio id odio eaque voluptate?</p>
+          <h3 style="padding-top: 20px;padding-bottom:20px;">Occasions</h3>
+          <p style="padding-bottom: 100px;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quam, expedita facere magni ratione fugit incidunt officia magnam a dicta perferendis aliquid libero, ut tempora voluptas ab autem sit vitae nulla vero error. Officiis, ut. Unde dolorum facilis corrupti voluptas reiciendis accusamus consectetur nam esse ea, veniam sequi sint aspernatur nisi, totam voluptates quasi vel quia ut similique repellendus nesciunt. Reprehenderit amet sunt, reiciendis aut laudantium ab commodi quae minima ipsum! Perferendis eum nihil porro nesciunt sed hic aperiam quidem, dolore animi repellendus ipsam voluptatem nam expedita, odit nostrum alias eos corporis. Asperiores rerum veritatis blanditiis tempore obcaecati dolorum sint?
+          </p>
+          </div>
+        </div>
+      </div>
+
+
+      
+             
+          <div class="container-fluid P-0 mt-3">
+            <div class="h">
+              <h1 style="text-align: center; padding-top: 40px;padding-bottom:30px;font-family:sans-serif;font-size:3pc">&nbsp OUR &nbsp  AWSOME &nbsp TEAM</h1>
+            </div>
+            
+              <div class="container-fluid">
+              
+                <div class="card-group ">
+                  
+                  <div class="card a25 bg-info text-white">
+                    <img class="card-img-top p-4" src="image/photo.jpg"  style="height: 440px;" alt="Card image cap">
+                    <div class="card-body" >
+                      <h5 class="card-title"><u>DEVELOPER</u></h5>
+                      <h4 style="padding-bottom: 40px;padding-top:10px">anne james</h4>
+                      <p class="card-text">Lorem, ipsum dolor sit amet  Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit aspernatur, recusandae accusantium voluptate rem?</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card a2 text-white bg-danger ">
+                    <img class="card-img-top p-4" src="image/d.jpg"  style="height:440px" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><u>DESIGNER</u></h5>
+                      <h4 style="padding-bottom: 40px;padding-top:10px">steaven brochli</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia, doloribus expedita mollitia ipsam repellat. </p>
+                      
+                    </div>
+                  </div>
+                  <div class="card a30 bg-dark">
+                    <img class="card-img-top p-4" src="image/manager.jpg" style="height:440px"  alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><U>MANAGER</U></h5>
+                      <h4 style="padding-bottom: 40px;padding-top:10px">anissa fisher</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aut? </p>
+                      
+                    </div>
+                  </div>
+                  <div class="card a40 bg-warning">
+                    <img class="card-img-top p-4" src="image/dev.jpg" style="height:440px" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><U>PHOTOGRAPHER</U></h5>
+                      <h4 style="padding-bottom: 40px;padding-top:10px">lisca born</h4>
+                      <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis consectetur totam maxime reprehenderit velit culpa!</p>
+                     
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+              
+            </div>
+
+            <div class="container">
+              <h2 style="text-align: center;padding-top:80px; padding-bottom:70px; font-family:sans-serif">What can you create with us?</h1>
+              <div class=""> 
+              <div class="t1">
+              <table class="table">
+                <thead>
+                  <tr>
+                    
+                    <th> <i class="fas fa-plus"></i> Photo Sessions</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    
+                    
+                    <td> <i class="fas fa-plus"></i> <B>Occasions</B></td>
+                  </tr>
+                  <tr>
+                    
+                    
+                    <td> <i class="fas fa-plus"></i> <B>coverage</B></td>
+                  </tr>
+                  <tr>
+                    
+                    
+                    <td><i class="fas fa-plus"></i>  <b>showcases</b></td>
+                  </tr>
+                  <tr>
+                    
+                    <td> <i class="fas fa-plus"></i> <b>photography</b></td>
+                  </tr>
+                <tr><td></td></tr>
+                </tbody>
+              </table>
+              </div>
+              </div>
+              
+            </div>
+
+            
+            <div class="container-fluid ">
+              <div class="row">
+                <div class="col-lg-3  col-md-6 ">
+                  <div class="image-block">
+                    
+                    <img src="image/work.jpg" width="400px" height="250px" >
+                
+                </div>
+                
+                </div>
+                <div class="col-lg-3  col-md-6 ">
+                  <div class="image-block ">
+                  
+                  <img src="image/v.jpg" width="400px" height="250px" ></div>
+                  
+                  
+
+                  </div>
+                <div class="col-lg-3  col-md-6">
+                  <div class="image-block">
+                    
+                  <img src="image/cov.jpg" width="400px" height="250px"></div>
+                  
+                  </div>
+                <div class="col-lg-3  col-md-6 ">
+                  <div class="image-block">
+                  
+                  <img src="image/show.jpg" width="400px" height="250px" >
+                  
+                </div>
+                  </div>
+              
+              </div>
+              </div>
+              
+
+              
+          <div class="container-fuild mt-3 lg-3 p-0 ">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 p-0 ">
+                <div class="form">
+                 <form action="">
+                  <div class="form-row">
+                    <div class="col p-3" style="position: relative;">
+                     <input type="text" placeholder="first name" class="form-control"><div class="ii" style="position: absolute; top:20px;left:155px"> <i class="far fa-user"></i></div>
+                    </div>
+                    <div class="col p-3 "style="position: relative;">
+                      <input type="text" placeholder="last name" class="form-control">
+                      <div class="i2" style="position: absolute; top:20px;left:155px">
+                      <i class="far fa-user"></i></div>
+                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col p-3" style="position: relative;">
+                     <input type="email" placeholder="email id" class="form-control">  
+                     <div class="i3" style="position: absolute; top:20px;left:165px">
+                     <i class="fas fa-envelope"></i></div>
+                    </div>
+                    <div class="col p-3"style="position: relative;">
+                      <input type="phone" placeholder="phone" class="form-control">
+                      <div class="i2" style="position: absolute; top:20px;left:165px">
+                      <i class="fas fa-phone"></i></div>
+                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col p-6">
+                      <input class="form-control" type="text" placeholder="subject">
+                    </div>
+                    <div class="col p-1"><i class="fas fa-edit"></i>
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col p-3">
+                      <input class="form-control" type="text" placeholder="message">
+                    </div>
+                    <div class="col p-3"><i class="fas fa-edit"></i>
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col p-6">
+                      <input class="form-control" type="text" placeholder="how did you hear about us">
+                    </div>
+                    <div class="col p-1"><i class="fas fa-edit"></i>
+
+                    </div>
+                  </div>
+                  <div class="b1"> 
+                    <button type="button" class="btn btn-dark btn-lg active ">Send</button> 
+                  </div>
+                  
+
+
+
+
+                </form>
+               
+                     
+
+          
+               </div>
+            </div>
+
+              
+              <div class="col-lg-6 col-sm-12 pl-5 sm-pt-0 pt-4">
+                <div class="media-content">
+                <header><h1 class="mbr-section-title text-align-left mbr-bold mbr-black pb-3 mbr-fonts-style display-2;">VISIT US </h1></header>
+                <h4 class="mbr-section-subtitle mbr-bold align-left mbr-black mbr-light pb-3 mbr-fonts-style display-7;"> WE'D LOVE TO HEAR WHAT YOU THINK</h4>
+                <div class="mbr-section-text mbr-black pb-3 ">
+                <P class="mbr-text align-left mbr-fonts-style display-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cupiditate vero, maxime reprehenderit nisi incidunt repellendus error quaerat eum cumque perspiciatis odio numquam. Recusandae sunt sed porro repellendus inventore perferendis quasi itaque nostrum molestiae! Aspernatur, rerum eius veniam facere omnis iste nulla vel consectetur eveniet minus. Quaerat accusantium magnam itaque quia, velit porro quo atque! Enim est illum ipsa id.</P>
+                <p class="text2 pt-2 align-left mbr-fonts-style display-7">
+                <strong>Our address</strong>
+                <br>
+                <p> company Name<br>
+                Address 1, Address 2<br>
+                street Name, Zip<br>
+                city, country<br></p>
+                 <p style="padding-bottom: 20px;">Tel: +123 456 7890</p>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid bg-secondary p-0 lg-3 mt-3">
+            <div class="container pt-5 pb-5">
+              <h1 style="text-align: center;padding-bottom:20px "> FOLLOW   US </h1>
+              <p style="text-align: center; margin: bottom 1px;"> <a href="https://twitter.com/?lang=en-in"> <i class="fab fa-twitter"></i></a> &nbsp &nbsp &nbsp <a href="https://www.facebook.com/" ><i class="fab fa-facebook"></i></a>&nbsp &nbsp &nbsp <a href="https://www.instagram.com/" ><i class="fab fa-instagram-square"></i></a>&nbsp&nbsp&nbsp <a href="https://www.youtube.com/" ><i class="fab fa-youtube"></i></a>&nbsp&nbsp&nbsp<a href="https://www.google.co.in/" ><i class="fab fa-google-plus"></i></a>&nbsp&nbsp&nbsp <a href="https://www.behance.net/gallery/58902999/Login" ><i class="fab fa-behance-square"></i></a> </p>
+              
+            </div>
+
+          </div>
+
+          
+          <div class="container mt-3">
+            
+            <div class="row">
+              <div class="col-sm-6 mt-3 sm-mt-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.3653200176927!2d81.32763201488672!3d21.217357385896534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293dd01739b0b3%3A0xd99b6bbc4dc3d206!2sEthereal%20Corporate%20Network%20Private%20Limited!5e0!3m2!1sen!2sin!4v1635404208659!5m2!1sen!2sin" width="100%" height="450" style="border:0;padding-bottom:10px;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              
+              
+              <div class="col-sm-6 mt-3 sm-mt-0 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.3653200176927!2d81.32763201488672!3d21.217357385896534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293dd01739b0b3%3A0xd99b6bbc4dc3d206!2sEthereal%20Corporate%20Network%20Private%20Limited!5e0!3m2!1sen!2sin!4v1635404208659!5m2!1sen!2sin" width="100%" height="450" style="border:0;padding-bottom:10px;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+            </div>
+          
+            
+<div class="conatiner-fluid bg-dark text-white p-0">
+  <div class="footer">
+      <div class="container p-4">
+  <div class="kp">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link " href="#!">About us</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#!">portfolio</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#!">event</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#!">careers</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#!">work</a>
+    </nav>
+  </div>
+  
+  
+    <p style="text-align: center;padding-top:10px;padding-bottom:2px;"> <a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i> </a> &nbsp &nbsp <a href="https://www.facebook.com/"> <i class="fab fa-facebook"></i> &nbsp &nbsp </a><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> </a> &nbsp &nbsp <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> </a> &nbsp &nbsp <a href="https://www.google.co.in/"> <i class="fab fa-google-plus"></i> </a> &nbsp &nbsp <a href="https://www.behance.net/gallery/58902999/Login"> <i class="fab fa-behance-square"></i> </a></p>
+    <p style="text-align: center;padding-bottom:40px; border-bottom:2px solid black;"><i class="fas fa-copyright"></i>  Copyright 2019 Mobirise - All Rights Reserved</p>
+    
+  </div>
+  </div>
+  </div>
+      
+  </body>
+  </html>
